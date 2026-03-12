@@ -16,22 +16,22 @@
                 <fieldset>
 
                     <legend>Dados Pessoais</legend>
-                    <label for="UserName">Nome</label>
+                    <label for="UserName">Nome:</label>
                     <input id="UserName" type="text" name="UserName" required> 
                     <br>              
-                    <label for="age">idade</label>
+                    <label for="age">idade:</label>
                     <input id="age" type="number" name="age" min="12" max="100" required> 
                     <br>
-                    <label for="BirthDate">Data de Nascimento</label>
+                    <label for="BirthDate">Data de Nascimento:</label>
                     <input id="BirthDate" type="date" name="BirthDate" required> 
                     <br>
-                    <label for="Email">E-mail</label>
+                    <label for="Email">E-mail:</label>
                     <input id="Email" type="email" name="Email" required>
                     <br>
-                    <label for="phone">Telefone</label>
+                    <label for="phone">Telefone:</label>
                     <input id="phone" type="tel" name="phone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen" required>
                     <br>
-                    <label for="Image">Foto de Perfil</label>
+                    <label for="Image">Foto de Perfil:</label>
                     <input id="Image" type="file" accept="image/*" name="Image" required>
                     <br>
 
@@ -52,7 +52,7 @@
 
                     <br>
 
-                    <label for="maritalStatus">Estado Cívil</label>
+                    <label for="maritalStatus">Estado Cívil:</label>
                     <select id="maritalStatus" name="maritalStatus" required>
                         <option value="nada">Selecione...</option>
                         <option value="Casado">Casado</option>
@@ -121,13 +121,16 @@
                     <label for="social4">TikTok</label>
                     <br>
                     <label for="MusicStyle">Estilo Musical:</label>
-                    <input list="styletypes" id="musicStyle" name="UserMusicStyle" type="text">
+                    <input list="styletypes" id="MusicStyle" name="UserMusicStyle" type="text">
                     <datalist id="styletypes">
                         <option value="rock">
                         <option value="pop">
                         <option value="Samba">
                         <option value="Sertanejo">
                     </datalist>
+                    <br>
+                    <label for="favoritecolor">Cor Favorita:</label>
+                    <input type="color" name="UserFavoriteColor" id="favoritecolor">
                 </fieldset>
 
                 <button type="submit">Enviar</button>
